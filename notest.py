@@ -1,4 +1,7 @@
 class TaskManager:
+    def __init__(self):
+        self.tasks = []
+
     def parse(self, command):
         return Action("add", command[2:])
 
